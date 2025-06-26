@@ -36,14 +36,14 @@ pip install -r requirements.txt
 cp .env.example .env
 #### .envファイルにGoogle Gemini API Keyを設定
 
-#### プレゼンテーション解析
+#### PowerPointファイルを分析し、質問と補足情報を生成
 python main.py analyze LLM2023/Matsuo_Lab_LLM_Day1_20231227.pptx
 
-#### 特定スライドの解析
-python main.py analyze-slide LLM2023/Matsuo_Lab_LLM_Day1_20231227.pptx 1
+#### 特定のスライドのみを分析
+python main.py analyze_slide LLM2023/Matsuo_Lab_LLM_Day1_20231227.pptx 1
 
-#### 一括解析
-python main.py batch-analyze LLM2023/
+#### ディレクトリ内の全PowerPointファイルを一括解析
+python main.py batch_analyze LLM2023/
 
-#### API接続テスト
-python main.py test-connection
+#### Google Gemini APIへの接続をテスト
+python main.py test_connection
